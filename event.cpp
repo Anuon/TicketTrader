@@ -1,6 +1,10 @@
 #include "event.h"
 
-#include "QDebug"
+
+
+Event::Event(){
+
+}
 
 Event::Event(int id, QString name, QString organizer, QString description, QString date_start, QString date_end, int capacity, int ticket_price, QString place, QString address){
     //qDebug() << "Created new event: id: " << id << " name: " << name << " organizer: " << organizer << " description: " << description << " date_start: " << date_start << " date_end: " << date_end << " capacity: " << capacity << " ticket_price: " << ticket_price;
@@ -14,6 +18,11 @@ Event::Event(int id, QString name, QString organizer, QString description, QStri
     this->ticket_price = ticket_price;
     this->place = place;
     this->address = address;
+}
+
+int Event::getId()
+{
+    return this->id;
 }
 
 QString Event::getName()

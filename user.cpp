@@ -1,9 +1,10 @@
 #include "user.h"
 
-User::User(QString name, int credits, QList<Event> events){
+User::User(QString name, int credits, QList<Event> events, QList<int> boughtTickets){
     this->name = name;
     this->credits = credits;
     this->events = events;
+    this->boughtTickets = boughtTickets;
 }
 
 QString User::getLoggedUser(){
@@ -22,4 +23,8 @@ void User::setCredits(int credits){
 
 QList<Event> User::getEvents(){
     return this->events;
+}
+
+QList<int> User::getBoughtTickets(){
+    return this->boughtTickets;
 }

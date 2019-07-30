@@ -9,6 +9,7 @@
 #include <QListWidgetItem>
 #include "eventitemwidget.h"
 #include "createeventwindow.h"
+#include "creditsformwindow.h"
 
 namespace Ui {
 class MainWindow;
@@ -25,19 +26,34 @@ public:
     void setLoggedUser(QString user);
 
     void setCredits(int credits);
+    QString getCredits();
 
     void userLoggedIn(QString name);
 
     void addEvent(Event event);
 
+    void refreshView();
+
+public slots:
+    void refreshCredits();
+
 private slots:
+
     void on_addNewItem_clicked();
 
+
+    void on_refreshButton_clicked();
+
+    void on_depositButton_clicked();
+
+    void on_withdrawButton_clicked();
 
 private:
     User *user;
     Ui::MainWindow *ui;
     CreateEventWindow *createEventWindow;
+    CreditsFormWindow *creditsFormWindow;
+    int result;
 
 };
 

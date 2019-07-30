@@ -2,10 +2,11 @@
 #define LOGINWINDOW_H
 
 #include <QMainWindow>
-#include <mainwindow.h>
-#include <registerwindow.h>
-#include <databasehandler.h>
+#include "mainwindow.h"
+#include "registerwindow.h"
+#include "databasehandler.h"
 #include <QMessageBox>
+#include "databasehandler.h"
 
 namespace Ui {
 class LoginWindow;

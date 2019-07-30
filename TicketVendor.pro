@@ -26,6 +26,7 @@ CONFIG += c++11
 
 SOURCES += \
         createeventwindow.cpp \
+        creditsformwindow.cpp \
         databasehandler.cpp \
         event.cpp \
         eventitemwidget.cpp \
@@ -37,6 +38,7 @@ SOURCES += \
 
 HEADERS += \
         createeventwindow.h \
+        creditsformwindow.h \
         databasehandler.h \
         event.h \
         eventitemwidget.h \
@@ -47,6 +49,7 @@ HEADERS += \
 
 FORMS += \
         createeventwindow.ui \
+        creditsformwindow.ui \
         eventitemwidget.ui \
         loginwindow.ui \
         mainwindow.ui \

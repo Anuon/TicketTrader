@@ -1,8 +1,6 @@
 #include "loginwindow.h"
 #include "ui_loginwindow.h"
 
-#include "databasehandler.h"
-
 LoginWindow::LoginWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::LoginWindow)
